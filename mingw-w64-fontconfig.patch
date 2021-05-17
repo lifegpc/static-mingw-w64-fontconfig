@@ -1,5 +1,5 @@
 diff --git a/mingw-w64-fontconfig/PKGBUILD b/mingw-w64-fontconfig/PKGBUILD
-index c026c93c0..0a927c91d 100644
+index c026c93c0..74fdc7892 100644
 --- a/mingw-w64-fontconfig/PKGBUILD
 +++ b/mingw-w64-fontconfig/PKGBUILD
 @@ -28,6 +28,7 @@ source=("https://www.freedesktop.org/software/fontconfig/release/fontconfig-${pk
@@ -14,7 +14,7 @@ index c026c93c0..0a927c91d 100644
              '57ff8420dbf62873b6fcb38b52fb7b37e0e278425a9125e15dccba54668c8ab9'
              '552b54010f9fe4097f332cf2397bbd3e78489542d3bbf07792ed1cfe9381796e'
              'af373531873da46d0356305da5444c1ec74f443cd2635ea2db6b7dadd1561f5b'
-+            '7b8ae28ef90bbfde0ff56b2af2af20d65a954ca04fc9586ddfefa0ceaf8146c4'
++            '8b11c54f6af6fd0c0d6f0ecf010e29bf5a786770f9b87ec847b65af6ed90e3e0'
              'ad4ce48983045d7f39b40ca9e04d4be2eaa9177b89dcc516388d779c131a88bc')
  
  prepare() {
