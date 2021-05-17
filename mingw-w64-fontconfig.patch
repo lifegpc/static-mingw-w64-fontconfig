@@ -1,0 +1,28 @@
+diff --git a/mingw-w64-fontconfig/PKGBUILD b/mingw-w64-fontconfig/PKGBUILD
+index c026c93c0..0a927c91d 100644
+--- a/mingw-w64-fontconfig/PKGBUILD
++++ b/mingw-w64-fontconfig/PKGBUILD
+@@ -28,6 +28,7 @@ source=("https://www.freedesktop.org/software/fontconfig/release/fontconfig-${pk
+         0004-fix-mkdtemp.mingw.patch
+         0005-fix-setenv.mingw.patch
+         0007-pkgconfig.mingw.patch
++        0008-add-intl-to-pkg-file.patch
+         fontconfig.hook.in)
+ sha256sums=('ea968631eadc5739bc7c8856cef5c77da812d1f67b763f5e51b57b8026c1a0a0'
+             '1266d4bbd8270f013fee2401c890f0251babf50a175a69d681d3a6af5003c899'
+@@ -35,6 +36,7 @@ sha256sums=('ea968631eadc5739bc7c8856cef5c77da812d1f67b763f5e51b57b8026c1a0a0'
+             '57ff8420dbf62873b6fcb38b52fb7b37e0e278425a9125e15dccba54668c8ab9'
+             '552b54010f9fe4097f332cf2397bbd3e78489542d3bbf07792ed1cfe9381796e'
+             'af373531873da46d0356305da5444c1ec74f443cd2635ea2db6b7dadd1561f5b'
++            '7b8ae28ef90bbfde0ff56b2af2af20d65a954ca04fc9586ddfefa0ceaf8146c4'
+             'ad4ce48983045d7f39b40ca9e04d4be2eaa9177b89dcc516388d779c131a88bc')
+ 
+ prepare() {
+@@ -45,6 +47,7 @@ prepare() {
+   patch -p1 -i ${srcdir}/0004-fix-mkdtemp.mingw.patch
+   patch -p1 -i ${srcdir}/0005-fix-setenv.mingw.patch
+   patch -p1 -i ${srcdir}/0007-pkgconfig.mingw.patch
++  patch -p1 -i ${srcdir}/0008-add-intl-to-pkg-file.patch
+ 
+   autoreconf -fiv
+ }

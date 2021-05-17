@@ -1,0 +1,9 @@
+--- fontconfig-2.13.93.orig/fontconfig.pc.in	2021-05-17 20:13:17 +0000
++++ fontconfig-2.13.93/fontconfig.pc.in	2021-05-17 20:15:26 +0000
+@@ -14,5 +14,5 @@
+ Requires: @PKGCONFIG_REQUIRES@
+ Requires.private: @PKGCONFIG_REQUIRES_PRIVATELY@
+ Libs: -L${libdir} -lfontconfig
+-Libs.private: @ICONV_LIBS@ @PKG_EXPAT_LIBS@
++Libs.private: @ICONV_LIBS@ @PKG_EXPAT_LIBS@ -lintl
+ Cflags: -I${includedir} @ICONV_CFLAGS@ @PKG_EXPAT_CFLAGS@
